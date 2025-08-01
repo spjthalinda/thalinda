@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@scure/bip32": "^1.7.0",
+    "@scure/bip39": "^1.6.0",
+    "@scure/btc-signer": "^1.8.1"
+  }
+}

@@ -1,0 +1,8 @@
+import * as ts from 'typescript';
+/**
+ * @public
+ */
+export declare function getProjectRootNamesAndCompilerOptions(project: string): Promise<{
+    rootNames: string[];
+    compilerOptions: ts.CompilerOptions;
+}>;

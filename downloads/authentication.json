@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "085cedc7-78f1-48ec-85de-32cf749006eb",
+		"name": "Authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/partners/sandbox/v2/oauth/authorize",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "<Your API Key>"
+					},
+					{
+						"key": "apisecret",
+						"value": "<Your API Secret>"
+					},
+					{
+						"key": "resourceOwnerId",
+						"value": "<Your API Key>"
+					},
+					{
+						"key": "requestUId",
+						"value": "{{$guid}}"
+					},
+					{
+						"key": "response-channel",
+						"value": "mobile"
+					},
+					{
+						"key": "endState",
+						"value": "mobile_app"
+					},
+					{
+						"key": "accept-language",
+						"value": "EN",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api-sandbox.partners.scb/partners/sandbox/v2/oauth/authorize",
+					"protocol": "https",
+					"host": [
+						"api-sandbox",
+						"partners",
+						"scb"
+					],
+					"path": [
+						"partners",
+						"sandbox",
+						"v2",
+						"oauth",
+						"authorize"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/partners/sandbox/v1/oauth/token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "resourceOwnerId",
+						"value": "<Your API Key>",
+						"type": "text"
+					},
+					{
+						"key": "requestUId",
+						"value": "{{$guid}}",
+						"type": "text"
+					},
+					{
+						"key": "accept-language",
+						"value": "EN",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"applicationKey\" : \"<Your API Key>\",\r\n\t\"applicationSecret\" : \"<Your API Secret>\",\r\n\t\"authCode\" : \"<Authorization Code>\"\r\n}"
+				},
+				"url": {
+					"raw": "https://api-sandbox.partners.scb/partners/sandbox/v1/oauth/token",
+					"protocol": "https",
+					"host": [
+						"api-sandbox",
+						"partners",
+						"scb"
+					],
+					"path": [
+						"partners",
+						"sandbox",
+						"v1",
+						"oauth",
+						"token"
+					]
+				},
+				"description": "POST /partners/v1/oauth/token"
+			},
+			"response": []
+		},
+		{
+			"name": "/partners/sandbox/v1/oauth/token/refresh",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "resourceOwnerId",
+						"type": "text",
+						"value": "<Your API Key>"
+					},
+					{
+						"key": "requestUId",
+						"type": "text",
+						"value": "{{$guid}}"
+					},
+					{
+						"key": "accept-language",
+						"value": "EN",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"applicationKey\" : \"<Your API Key>\",\r\n\t\"applicationSecret\" : \"<Your API Secret>\",\r\n\t\"refreshToken\" : \"<Refresh token of the previously generated access token>\"\r\n}"
+				},
+				"url": {
+					"raw": "https://api-sandbox.partners.scb/partners/sandbox/v1/oauth/token/refresh",
+					"protocol": "https",
+					"host": [
+						"api-sandbox",
+						"partners",
+						"scb"
+					],
+					"path": [
+						"partners",
+						"sandbox",
+						"v1",
+						"oauth",
+						"token",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

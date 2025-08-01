@@ -1,0 +1,33 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.4.2
+2 info using node@v24.4.1
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/types/CoinSpace/web/.npmrc
+5 silly config load:file:/data/data/com.termux/files/home/.npmrc
+6 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+7 verbose title npm login
+8 verbose argv "login" "--registry" "https://npm.pkg.github.com"
+9 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2025-08-01T12_13_51_021Z-
+10 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2025-08-01T12_13_51_021Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 notice Log in on https://npm.pkg.github.com/
+13 verbose web login before first POST
+14 silly logfile done cleaning log files
+15 http fetch POST 404 https://npm.pkg.github.com/-/v1/login 720ms
+16 verbose web login not supported, trying couch
+17 verbose login before first PUT {
+17 verbose login   _id: 'org.couchdb.user:spjthalinda',
+17 verbose login   name: 'spjthalinda',
+17 verbose login   password: 'XXXXX',
+17 verbose login   type: 'user',
+17 verbose login   roles: [],
+17 verbose login   date: '2025-08-01T12:15:14.452Z'
+17 verbose login }
+18 http fetch PUT 201 https://npm.pkg.github.com/-/user/org.couchdb.user:spjthalinda 1001ms
+19 info login Logged in on https://npm.pkg.github.com/.
+20 verbose cwd /data/data/com.termux/files/home/types/CoinSpace/web
+21 verbose os Linux 5.15.149-android13-8-o-g6bd57d3589d6
+22 verbose node v24.4.1
+23 verbose npm  v11.4.2
+24 verbose exit 0
+25 info ok
