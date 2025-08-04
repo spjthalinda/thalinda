@@ -1,0 +1,39 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@10.9.2
+2 info using node@v22.17.1
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm install
+7 verbose argv "install"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2025-08-04T02_05_53_330Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2025-08-04T02_05_53_330Z-debug-0.log
+10 silly logfile start cleaning logs, removing 1 files
+11 silly packumentCache heap:1098907648 maxSize:274726912 maxEntrySize:137363456
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly reify moves {}
+15 verbose stack Error: Could not read package.json: Error: ENOENT: no such file or directory, open '/data/data/com.termux/files/home/package.json'
+15 verbose stack     at async open (node:internal/fs/promises:639:25)
+15 verbose stack     at async readFile (node:internal/fs/promises:1243:14)
+15 verbose stack     at async read (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/package-json/lib/read-package.js:9:18)
+15 verbose stack     at async PackageJson.load (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/package-json/lib/index.js:131:31)
+15 verbose stack     at async PackageJson.normalize (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/package-json/lib/index.js:117:5)
+15 verbose stack     at async runScript (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/run-script.js:11:28)
+15 verbose stack     at async Install.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/commands/install.js:175:9)
+15 verbose stack     at async Npm.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/npm.js:207:9)
+15 verbose stack     at async module.exports (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/cli/entry.js:67:5)
+16 error code ENOENT
+17 error syscall open
+18 error path /data/data/com.termux/files/home/package.json
+19 error errno -2
+20 error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/data/data/com.termux/files/home/package.json'
+21 error enoent This is related to npm not being able to find a file.
+21 error enoent
+22 verbose cwd /data/data/com.termux/files/home
+23 verbose os Linux 5.15.149-android13-8-o-g6bd57d3589d6
+24 verbose node v22.17.1
+25 verbose npm  v10.9.2
+26 verbose exit -2
+27 verbose code -2
+28 error A complete log of this run can be found in: /data/data/com.termux/files/home/.npm/_logs/2025-08-04T02_05_53_330Z-debug-0.log

@@ -1,0 +1,23 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@11.4.2
+2 info using node@v24.4.1
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm exec @reown/appkit-cli
+7 verbose argv "exec" "--" "@reown/appkit-cli"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2025-08-03T10_14_27_192Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2025-08-03T10_14_27_192Z-debug-0.log
+10 silly logfile start cleaning logs, removing 1 files
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+13 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+14 http fetch GET 200 https://registry.npmjs.org/@reown%2fappkit-cli 962ms (cache revalidated)
+15 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+16 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+17 verbose cwd /data/data/com.termux/files/home
+18 verbose os Linux 5.15.149-android13-8-o-g6bd57d3589d6
+19 verbose node v24.4.1
+20 verbose npm  v11.4.2
+21 verbose exit 0
+22 info ok

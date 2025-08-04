@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@reown/appkit-cli": "^1.7.17"
+  },
+  "_npx": {
+    "packages": [
+      "@reown/appkit-cli"
+    ]
+  }
+}
